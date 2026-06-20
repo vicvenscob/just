@@ -1,0 +1,11 @@
+[package]
+name = "just"
+version = "1.53.0"
+description = "Just a command runner"
+homepage = "https://just.systems/"
+license = "CC0 1.0"
+url = "https://github.com/vinvenscob/just/archive/refs/heads/main.tar.gz"
+depends = []
+post_install = "cargo build --release && cp target/release/just /usr/local/bin/just"
+
+[package.files]
